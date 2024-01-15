@@ -1,15 +1,15 @@
 import { useState } from 'react'
+import './styles/styles.scss'
+import Header from './components/Header/Header'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='header'>
-        <div className='logo'>Logo Here Make inline</div>
-        <div className='navigation'> Navigation Shit Make inline</div>
-        <div className='socials'> Socials</div>
-      </div>
+      <Header>
+
+      </Header>
 
       <div className='intro'>
 
