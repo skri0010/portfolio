@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './styles/styles.scss'
 import Header from './components/Header/Header'
+import Introduction from './components/Body/Introduction'
+import Skills from './components/Skills/Skills'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,18 +12,13 @@ function App() {
       <Header>
 
       </Header>
+      <Introduction>
 
-      <div className='intro'>
+      </Introduction>
 
-        <div className='name'> Suchit <br></br>Krishna</div>
-        <div className='image'> [Image]</div>
-        <div className='summary'>Gay Developer</div>
-      </div>
+      <Skills>
 
-      <div className='skills'>
-
-        <div className='name'> List of skills </div>
-      </div>
+      </Skills>
 
       <div className='experience'>
 

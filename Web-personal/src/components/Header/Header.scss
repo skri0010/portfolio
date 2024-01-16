@@ -1,0 +1,100 @@
+@import '../../styles/styles.scss';
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* navbar styling */
+.navbar {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+/* logo style  */
+.logo img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    display: block;
+    width: 2rem;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: $gold;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 94%;
+    top: 6rem;
+    left: 18px;
+    background-color: $dark-grey;
+    font-weight: 600;
+
+}
+
+.nav-menu a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    color: $white;
+}
+
+.nav-menu a:hover {
+    background-color: $gold;
+}
+
+.hide {
+    display: none;
+}
+
+.socials {
+    padding-top: 2rem;
+    display: block;
+}
+
+/* for Desktop view  */
+@media screen and (min-width:600px) {
+    .navbar {
+        // justify-content: space-around;
+    }
+
+    .nav-menu {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .nav-menu a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .nav-menu a:hover {
+        background-color: $gold;
+        border-radius: 5px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .socials {
+        display: inline-block;
+    }
+}
