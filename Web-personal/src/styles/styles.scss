@@ -1,7 +1,7 @@
-$dark-grey: rgb(44,45,50);
-$light-grey: rgb(50,51,56);
+$dark-grey: rgb(44, 45, 50);
+$light-grey: rgb(50, 51, 56);
 $white: rgb(255, 255, 255);
-$gold: rgb(193,174,112);
+$gold: rgb(193, 174, 112);
 
 * {
     box-sizing: border-box;
@@ -11,7 +11,7 @@ $gold: rgb(193,174,112);
     font-family: sans-serif;
 }
 
-:root{
+:root {
     background-color: $dark-grey;
 }
 
@@ -46,13 +46,30 @@ p {
     color: $gold
 }
 
-.section{
-    padding:0.5rem 1rem;
+
+.section {
+    padding: 0.5rem 1rem;
+}
+
+@mixin center() {
+    display: block;
+    margin: auto;
 }
 
 /* for Desktop view  */
 @media screen and (min-width:600px) {
-    .section{
-        padding:0.5rem 10rem;
+    .section {
+        padding: 0.5rem 10rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+    .grid .item {
+        min-height: 200px;
+        padding: 50px
     }
 }

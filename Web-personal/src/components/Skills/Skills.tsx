@@ -1,15 +1,37 @@
-import './Skills.scss'
+import SkillCard from './SkillCard';
+import WebDevelopmentImg from '../../public/images/web-development.svg'
+
 function Skills() {
-    return (
-        <div className='skills section'>
-            <h4>SKILLS</h4>
-            <h2>What I Am Great At</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Expedita quas facere tempore nobis, vel natus, dolor eligendi a at odit officia,
-            </p>
-            <div className='skill-card'></div>
-        </div>
-    )
+  const skills = [
+    {
+      title: 'Web Development',
+      image: WebDevelopmentImg
+    },
+    {
+      title: 'Web Development',
+      image: WebDevelopmentImg
+    },
+    {
+      title: 'Web Development',
+      image: WebDevelopmentImg
+    },
+    {
+      title: 'Web Development',
+      image: WebDevelopmentImg
+
+    }];
+
+  return (
+    <div className='skills section'>
+      <h4>SKILLS</h4>
+      <h2>What I Am Great At</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Expedita quas facere tempore nobis, vel natus, dolor eligendi a at odit officia,
+      </p>
+      <SkillCard skills={skills} />
+    </div>
+  );
 }
 
-export default Skills
+export default Skills;

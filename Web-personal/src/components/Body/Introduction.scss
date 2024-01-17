@@ -23,31 +23,20 @@
 }
 
 .personal-img {
-    display: block;
     height: 20rem;;
-    margin: auto;
     border-radius: 50%;
     border-style: solid;
     border-color: $gold;
+    @include center;
+}
+
+.image {
+    padding: 0 0 1rem;
 }
 
 @media screen and (min-width:600px) {
-    .contact{
-        display: inline-block;
-        padding: 30px;
-    }
-    .image {
-        display: inline-block;
-        padding: 30px;
-        position: static;
-    }
-
-    .summary {
-        display: inline-block;
-        padding: 30px;
-    }
-
     .personal-img {
-        height: 18rem;
+        height: 30rem;
     }
+    
 }
