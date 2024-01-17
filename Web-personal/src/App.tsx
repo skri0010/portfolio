@@ -2,6 +2,7 @@ import './styles/styles.scss'
 import Header from './components/Header/Header'
 import Introduction from './components/Body/Introduction'
 import Skills from './components/Skills/Skills'
+import Projects from './components/Projects/Projects'
 
 function App() {
 
@@ -18,15 +19,11 @@ function App() {
 
       </Skills>
 
-      <div className='experience'>
+      {/* <div className='experience'>
 
         <div className='name'> List of experiences</div>
-      </div>
-
-      <div className='projects'>
-
-        <div className='name'> List of projects </div>
-      </div>
+      </div> */}
+      <Projects></Projects>
 
       
     </>

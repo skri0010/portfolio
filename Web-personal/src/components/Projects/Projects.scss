@@ -1,0 +1,30 @@
+@import '../../styles/styles.scss';
+
+.project-card {
+    height: 200px;
+    width: auto;
+    border:solid;
+    border-color: $gold;
+    @include center;
+    margin: 1rem auto;
+}
+
+
+.project-img {
+    padding-top: 2rem;
+    
+    img {
+        display: block;
+        margin: auto;
+        height: 50px;
+    }
+}
+
+.project-text .text {
+    font-size: 1.2rem;
+    color: $white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
