@@ -6,26 +6,27 @@
 
 .skill-card {
     background-color: $dark-grey;
-    height: 200px;
-    width:150px;
-    @include center;
+    height: 25vh;
+    width: 50vw;
     margin: 1rem auto;
-}
-
-.skill-img {
-    padding-top: 2rem;
     
-    img {
-        display: block;
-        margin: auto;
-        height: 50px;
+    .skill-img {
+        padding-top: 2rem;
+        @include center;
+    
+        img {
+            height: 50px;
+        }
     }
-}
 
-.skill-text .text {
-    font-size: 1.2rem;
-    color: $white;
-    display: flex;
-    text-align: center;
-    padding-top: 1rem;
+    .skill-text {
+        @include center;
+        .text {
+            font-size: 1.2rem;
+            color: $white;
+            display: flex;
+            text-align: center;
+            padding-top: 1rem;
+        }
+    }
 }
