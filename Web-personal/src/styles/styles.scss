@@ -1,5 +1,6 @@
 $dark-grey: rgb(44, 45, 50);
-$light-grey: rgb(50, 51, 56);
+// $light-grey: rgb(50, 51, 56);
+$light-grey: rgb(51, 53, 58);
 $white: rgb(255, 255, 255);
 $gold: rgb(193, 174, 112);
 
@@ -35,11 +36,13 @@ h3 {
 h4 {
     color: $gold;
     font-size: 1rem;
+    padding-top: 2.5vh;
 }
 
 p {
     font-size: 1rem;
     color: $white;
+    padding: 1vh 0;
 }
 
 .dot {
@@ -71,6 +74,6 @@ p {
 
     .grid .item {
         min-height: 200px;
-        padding: 50px
+        padding: 5vh;
     }
 }

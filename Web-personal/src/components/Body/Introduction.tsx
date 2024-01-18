@@ -7,7 +7,7 @@ function Introduction() {
             <div className='contact item'>
                 <h1>Suchit<h1>Krishna<span className='dot'>.</span></h1></h1>
                 <span className='line'></span>
-                <p>Lorem ipsum | dolor </p><p>sit amet | consectetur</p>
+                <p style={{ whiteSpace: 'pre-line' }}>{'Lorem ipsum | dolor \n sit amet | consectetur'}</p>
                 <button className='contact-me-btn' id='contactMeBtn'>CONTACT ME</button>
             </div>
 
