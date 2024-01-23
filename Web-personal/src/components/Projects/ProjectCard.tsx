@@ -1,4 +1,8 @@
-import './Projects.scss'
+import React from 'react';
+import './Projects.scss';
+import reactIcon from '../../public/images/react.svg';
+import typeScriptIcon from '../../public/images/typescript.svg';
+import sassIcon from '../../public/images/sass.svg'
 
 type ProjectProps = {
     projects: {
@@ -9,29 +13,25 @@ type ProjectProps = {
 
 function ProjectCard(props: ProjectProps) {
     return (
-        <div>
+        <div className='grid'>
             {
                 props.projects.map(project => {
                     return (
-                        // <div className='project-card'>
-                        //     <div className='test1'>
-                        //         <div className='project-text'>
-                        //             <span className='text'>{project.title}</span>
-                        //         </div>
-                        //         <div className='project-desc'>
-                        //             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusantium corporis, </p>
-                        //         </div>
-                        //     </div>
-                        //     <div className='test2'> <div className='project-img'><img src={'https://bit.ly/2GkldBe'}></img></div></div>
-                            
-                        // </div>)
-                        <div className='project-card'>
-                            <div className='image'>
-
+                        <div className='project-card item'>
+                            <div className='project-img'>
+                                <img src={'https://bit.ly/2GkldBe'}></img>
                             </div>
-                            <div className='text-area'></div>
-                            <div className='icons'></div>
-                            
+                            <div className='text-area'>
+                                <h4> Monash Internship</h4> 
+                                <p>A project I used to manage the clients of the clients of the customers of the patients</p>
+                            </div>
+
+                            <div className='icons'>
+                                <img src={reactIcon}></img>
+                                <img src={typeScriptIcon}></img>
+                                <img src={sassIcon}></img>
+                            </div>
+
                         </div>)
                 })
             }

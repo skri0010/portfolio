@@ -1,55 +1,50 @@
 @import '../../styles/styles.scss';
 
 .project-card {
-    height: 200px;
+    position: relative;
+    height: 35vh;
     width: auto;
+    padding-bottom: 1rem;
+
     border: solid;
-    border-color: $gold;
-    border-radius: 15px 100px 100px 15px;
-    margin: 1rem auto;
+    border-width: 2px;
+    border-color: $grey;
+    border-radius: 15px;
 
-    .project-desc {
-        text-align: center;
-    }
+    margin: 3rem;
+    background-color: $light-grey;
 
-    .test1 {
-        padding-left: 10px;
-        // display: inline-block;
-        width: 60%;
-        float: left;
+    box-shadow: -5px 5px 10px $gold;
 
-        .project-text {
-            padding-bottom: 10px;
-            span {
-                font-size: 1.2rem;
-                color: $white;
-                @include center;
-                padding: 0.5rem;
-            }
-        }
-    }
-
-    .test2 {
-        // display: inline-block;
-        padding-left: 10px;
-        float: right;
-        width: 40%;
-        height: 100%;
-        .project-img {
-            // padding-top: 2rem;
-            // @include center;
-            width: 100%;
+    .project-img {
+        height: 50%;
+        
+        img {
+            border-radius: 15px 15px 0 0;
             height: 100%;
-            
-            img {
-                width:100%;
-                height: 100%;
-                border-radius: 15px 100px 100px 15px;
-                border: solid;
-                color: $gold;
-            }
+            width: 100%;
+            display: flex;
         }
-    
+    }
+
+    .text-area {
+        height: 40%;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    .icons {
+        height:10%;
+        @include center;
+        // padding: 10px;
+        img{
+            height: 100%;
+            margin: 0.2rem;
+        }
     }
     
 }

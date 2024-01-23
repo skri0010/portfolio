@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Header.scss'
+import reactIcon from '../../public/images/react.svg'
 
 function Header() {
     const [isNavMenuHidden, setNavMenuHidden] = useState(true);
@@ -25,8 +26,10 @@ function Header() {
                     <a href="#">Career</a>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
+                    <span className='v-line'></span>
                     <div className='socials'>
-                        Hey
+                        <img src={reactIcon}></img>
+                        <img src={reactIcon}></img>
                     </div>
                 </div>
             </nav>

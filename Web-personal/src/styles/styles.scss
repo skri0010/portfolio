@@ -1,6 +1,6 @@
 $dark-grey: rgb(44, 45, 50);
-// $light-grey: rgb(50, 51, 56);
-$light-grey: rgb(51, 53, 58);
+$grey: rgb(38, 39, 43);
+$light-grey: rgb(55, 57, 62);
 $white: rgb(255, 255, 255);
 $gold: rgb(193, 174, 112);
 
@@ -70,10 +70,11 @@ p {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 10px;
+        .item {
+            min-height: 200px;
+            padding: 5vh;
+        }
     }
 
-    .grid .item {
-        min-height: 200px;
-        padding: 5vh;
-    }
+
 }

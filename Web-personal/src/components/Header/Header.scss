@@ -1,5 +1,15 @@
 @import '../../styles/styles.scss';
 
+.v-line {
+    display: inline-block;
+    width: 3px;
+    height: 2rem;
+    background-color: $gold;
+    position: relative;
+    margin: 0 10px;
+    top: 10px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -14,87 +24,103 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-}
 
-/* logo style  */
-.logo img {
-    width: 4rem;
-    height: 4rem;
-    margin-left: 1rem;
-}
+    /* logo style  */
+    .logo img {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 1rem;
+    }
 
-.hamburger-menu {
-    cursor: pointer;
-}
+    .hamburger-menu {
+        cursor: pointer;
 
-.hamburger-menu .line {
-    display: block;
-    width: 2rem;
-    height: 4px;
-    margin-bottom: 5px;
-    background-color: $gold;
-    cursor: pointer;
-}
+        .line {
+            display: block;
+            width: 2rem;
+            height: 4px;
+            margin-bottom: 5px;
+            background-color: $gold;
+        }
+    }
 
-.nav-menu {
-    position: fixed;
-    width: 94%;
-    top: 6rem;
-    left: 18px;
-    background-color: $dark-grey;
-    font-weight: 600;
+    .nav-menu {
+        position: fixed;
+        width: 94%;
+        top: 6rem;
+        left: 18px;
+        background-color: $dark-grey;
+        font-weight: 600;
 
-}
+        a {
+            display: block;
+            text-align: center;
+            padding: 5px 0;
+            color: $white;
+        }
 
-.nav-menu a {
-    display: block;
-    text-align: center;
-    padding: 5px 0;
-    color: $white;
-}
+        a:hover {
+            background-color: $gold;
+        }
 
-.nav-menu a:hover {
-    background-color: $gold;
+    }
+
+    .socials {
+        // padding-top: 2rem;
+        @include center;
+        img {
+            height:25px;
+        }
+    }
 }
 
 .hide {
     display: none;
 }
 
-.socials {
-    padding-top: 2rem;
-    display: block;
-}
+
 
 /* for Desktop view  */
 @media screen and (min-width:600px) {
     .navbar {
         // justify-content: space-around;
-    }
+        position: sticky;
+        top: 0;
+        background-color: $dark-grey;
+        background-color: rgba(44, 45, 50, 0.716);
+        
+        .nav-menu {
+            display: block;
+            position: static;
+            width: auto;
+            margin-right: 20px;
+            background: none;
+    
+            a {
+                display: inline-block;
+                padding: 15px 20px;
+            }
+    
+            a:hover {
+                background-color: $gold;
+                border-radius: 5px;
+            }
+        }
 
-    .nav-menu {
-        display: block;
-        position: static;
-        width: auto;
-        margin-right: 20px;
-        background: none;
-    }
-
-    .nav-menu a {
-        display: inline-block;
-        padding: 15px 20px;
-    }
-
-    .nav-menu a:hover {
-        background-color: $gold;
-        border-radius: 5px;
+        .socials {
+            height:1.5rem;
+            display: inline-block;
+            img {
+                height:100%;
+                position: relative;
+                top:5px;
+            }
+        }
     }
 
     .hamburger-menu {
         display: none;
     }
 
-    .socials {
-        display: inline-block;
-    }
+    
 }
