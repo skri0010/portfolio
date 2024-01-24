@@ -1,36 +1,52 @@
 import WebDevelopmentImg from '../../public/images/web-development.svg';
+let TestImg = 'https://bit.ly/2GkldBe'
+
 import ProjectCard from './ProjectCard';
+import reactIcon from '../../public/images/react.svg';
+import typeScriptIcon from '../../public/images/typescript.svg';
+import sassIcon from '../../public/images/sass.svg'
 
 function Project() {
-    const projects = [
-        {
-          title: 'Internship Management System',
-          image: WebDevelopmentImg
-        },
-        {
-          title: 'GreenSHeart ReportCare Clinician',
-          image: WebDevelopmentImg
-        },
-        {
-          title: 'Monash Time Tracker',
-          image: WebDevelopmentImg
-        },
-        {
-          title: 'Web Development',
-          image: WebDevelopmentImg
-    
-        }];
-    return (
-        <div className='projects section'>
-            <h4>PORTFOLIO</h4>
-            <h2>My Masterpiece Collection</h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Expedita quas facere tempore nobis, vel natus, dolor eligendi a at odit officia,
-            </p>
-            <ProjectCard projects={projects}/>
-        </div>
-    )
+  const projects = [
+    {
+      title: 'Internship Management System',
+      desc: '',
+      image: TestImg,
+      icons: [reactIcon, typeScriptIcon, sassIcon]
+    },
+    {
+      title: 'GreenSHeart ReportCare Clinician',
+      desc: '',
+      image: TestImg,
+      icons: [reactIcon, typeScriptIcon, sassIcon]
+    },
+    {
+      title: 'Monash Time Tracker',
+      desc: '',
+      image: TestImg,
+      icons: [reactIcon, typeScriptIcon, sassIcon]
+    },
+    {
+      title: 'Web Development',
+      desc: '',
+      image: TestImg,
+      icons: [reactIcon, typeScriptIcon, sassIcon ]
+
+    }];
+  return (
+    <div className='projects section'>
+      <div className='text-area'>
+        <h4>PORTFOLIO</h4>
+        <h2>My Masterpiece Collection</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Expedita quas facere tempore nobis, vel natus, dolor eligendi a at odit officia,
+        </p>
+      </div>
+
+      <ProjectCard projects={projects} />
+    </div>
+  )
 }
 
 export default Project

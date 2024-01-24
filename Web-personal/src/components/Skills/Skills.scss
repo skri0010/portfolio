@@ -30,3 +30,22 @@
         }
     }
 }
+
+@media screen and (min-width:600px) {
+    .skill-card {
+        width: auto;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-gap: 10px;
+        overflow: auto;
+        .item {
+            min-height: 200px;
+            margin: 1vh;
+        }
+    }
+
+
+}

@@ -3,7 +3,7 @@ import PersonalImage from '../../public/images/20230219_091010.jpg'
 
 function Introduction() {
     return (
-        <div className='intro section grid'>
+        <div className='intro intro-grid'>
             <div className='contact item'>
                 <h1>Suchit<h1>Krishna<span className='dot'>.</span></h1></h1>
                 <span className='line'></span>
@@ -11,7 +11,7 @@ function Introduction() {
                 <button className='contact-me-btn' id='contactMeBtn'>CONTACT ME</button>
             </div>
 
-            <div className='image item'><img src={PersonalImage} className='personal-img'></img></div>
+            <div className='image item middle-column'><img src={PersonalImage} className='personal-img'></img></div>
             <div className='summary item'>
                 <h4>INTRODUCTION</h4>
                 <h2>Software Engineer,<br></br> Full Stack Web Developer</h2>

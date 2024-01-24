@@ -9,92 +9,128 @@ a {
 
 /* navbar styling */
 .navbar {
+    position:sticky;
+    top:0;
+    background-color: rgba(44, 45, 50, 0.716);
+
     display: flex;
-    height: 5rem;
+    height: 4rem;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
-}
+    padding: 1rem 1rem;
+    z-index: 1;
 
-/* logo style  */
-.logo img {
-    width: 4rem;
-    height: 4rem;
-    margin-left: 1rem;
-}
+    /* logo style  */
+    .logo img {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 1rem;
+    }
 
-.hamburger-menu {
-    cursor: pointer;
-}
+    .hamburger-menu {
+        cursor: pointer;
 
-.hamburger-menu .line {
-    display: block;
-    width: 2rem;
-    height: 4px;
-    margin-bottom: 5px;
-    background-color: $gold;
-    cursor: pointer;
-}
+        .line {
+            display: block;
+            width: 2rem;
+            height: 4px;
+            margin-bottom: 5px;
+            background-color: $gold;
+        }
+    }
 
-.nav-menu {
-    position: fixed;
-    width: 94%;
-    top: 6rem;
-    left: 18px;
-    background-color: $dark-grey;
-    font-weight: 600;
+    .nav-menu {
+        position: fixed;
+        top: 0rem;
+        right: 0;
+        z-index: -1;
 
-}
+        height:100%;
+        width: 70%;
+        
+        padding-top: 100px; // Causing issue
+        background-color: $dark-grey;
+        font-weight: 600;
 
-.nav-menu a {
-    display: block;
-    text-align: center;
-    padding: 5px 0;
-    color: $white;
-}
 
-.nav-menu a:hover {
-    background-color: $gold;
+        transition: 0.5s;
+
+        a {
+            display: block;
+            text-align: center;
+            padding: 4%;
+            color: $white;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background-color: $gold;
+        }
+
+    }
+
+    .socials {
+        // padding-top: 2rem;
+        @include center;
+        img {
+            height:25px;
+        }
+    }
 }
 
 .hide {
     display: none;
 }
 
-.socials {
-    padding-top: 2rem;
-    display: block;
-}
+
 
 /* for Desktop view  */
 @media screen and (min-width:600px) {
     .navbar {
         // justify-content: space-around;
-    }
+        padding: 1rem 10vw;
+        
+        .nav-menu {
+            display: block;
+            position: static;
+            width: auto;
+            margin-right: 20px;
+            background: none;
+    
+            a {
+                display: inline-block;
+                padding: 15px 20px;
+            }
+    
+            a:hover {
+                background-color: $gold;
+                border-radius: 5px;
+            }
+        }
+        .v-line {
+            display: inline-block;
+            width: 3px;
+            height: 2rem;
+            background-color: $gold;
+            position: relative;
+            margin: 0 10px;
+            top: 10px;
+        }
 
-    .nav-menu {
-        display: block;
-        position: static;
-        width: auto;
-        margin-right: 20px;
-        background: none;
-    }
-
-    .nav-menu a {
-        display: inline-block;
-        padding: 15px 20px;
-    }
-
-    .nav-menu a:hover {
-        background-color: $gold;
-        border-radius: 5px;
+        .socials {
+            height:1.5rem;
+            display: inline-block;
+            img {
+                height:100%;
+                position: relative;
+                top:5px;
+            }
+        }
     }
 
     .hamburger-menu {
         display: none;
     }
 
-    .socials {
-        display: inline-block;
-    }
+    
 }

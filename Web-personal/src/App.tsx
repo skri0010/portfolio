@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Introduction from './components/Body/Introduction'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <div className='name'> List of experiences</div>
       </div> */}
       <Projects></Projects>
+      <Footer></Footer>
 
       
     </>

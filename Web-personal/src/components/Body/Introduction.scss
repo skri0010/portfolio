@@ -1,7 +1,7 @@
 @import '../../styles/styles.scss';
 
 .intro {
-    padding-top: 2.5rem;
+    padding: 2.5rem 1rem 5vh;
 }
 
 .contact {
@@ -27,9 +27,9 @@
 
 .image {
     @include center;
-    
+
     .personal-img {
-        height: 20rem;
+        height: 18rem;
         ;
         border-radius: 50%;
         border-style: solid;
@@ -43,8 +43,30 @@
 }
 
 @media screen and (min-width:600px) {
-    .personal-img {
-        height: 30rem;
+    .intro {
+        padding: 5vw 10vw 0;
     }
+
+    .intro-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 10px;
+
+        .item {
+            min-height: 200px;
+            margin: 1vh;
+        }
+
+        .middle-column {
+            grid-column: 2;
+
+            img {
+                height: 30vw;
+            }
+
+        }
+    }
+
+
 
 }
