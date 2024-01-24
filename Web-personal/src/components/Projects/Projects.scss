@@ -27,7 +27,7 @@
         }
     }
 
-    .text-area {
+    .text {
         height: 40%;
         text-align: center;
         overflow: hidden;
@@ -47,4 +47,18 @@
         }
     }
     
+}
+
+@media screen and (min-width:600px) {
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: 10px;
+        .item {
+            min-height: 200px;
+            margin: 5vh;
+        }
+    }
+    
+
 }

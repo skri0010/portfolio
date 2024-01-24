@@ -23,7 +23,7 @@ a {
     height: 5rem;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding: 1rem 1rem;
 
     /* logo style  */
     .logo img {
@@ -88,6 +88,7 @@ a {
         top: 0;
         background-color: $dark-grey;
         background-color: rgba(44, 45, 50, 0.716);
+        padding: 1rem 10vw;
         
         .nav-menu {
             display: block;

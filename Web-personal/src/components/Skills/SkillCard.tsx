@@ -9,7 +9,7 @@ type SkillProps = {
 
 function SkillCard(props: SkillProps) {
     return (
-        <div className='grid'>
+        <div className='skills-grid'>
             {
                 props.skills.map(skill => {
                     return (

@@ -13,7 +13,7 @@ type ProjectProps = {
 
 function ProjectCard(props: ProjectProps) {
     return (
-        <div className='grid'>
+        <div className='project-grid'>
             {
                 props.projects.map(project => {
                     return (
@@ -21,7 +21,7 @@ function ProjectCard(props: ProjectProps) {
                             <div className='project-img'>
                                 <img src={'https://bit.ly/2GkldBe'}></img>
                             </div>
-                            <div className='text-area'>
+                            <div className='text'>
                                 <h4> Monash Internship</h4> 
                                 <p>A project I used to manage the clients of the clients of the customers of the patients</p>
                             </div>

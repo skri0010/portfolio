@@ -63,18 +63,14 @@ p {
 /* for Desktop view  */
 @media screen and (min-width:600px) {
     .section {
-        padding: 0.5rem 10rem;
+        padding: 10vw 10vw;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 10px;
-        .item {
-            min-height: 200px;
-            padding: 5vh;
+    .text-area {
+        h1, h2, h3, h3, h4, p {
+            text-align: center;
+            padding: 1vh 5vh;
         }
+
     }
-
-
 }

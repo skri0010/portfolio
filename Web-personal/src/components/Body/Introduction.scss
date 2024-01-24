@@ -43,8 +43,24 @@
 }
 
 @media screen and (min-width:600px) {
-    .personal-img {
-        height: 30rem;
+    .intro {
+        padding: 5vw 10vw 0;
     }
+
+    .intro-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-gap: 10px;
+        .item {
+            min-height: 200px;
+            margin: 1vh;
+        }
+        .middle-column {
+            grid-column: 2; 
+            img {height: 35vw;}
+        }
+    }
+
+
 
 }

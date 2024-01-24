@@ -12,7 +12,7 @@ function Header() {
 
     return (
         <>
-            <nav className='navbar section'>
+            <nav className='navbar'>
                 <div className='logo'>
                     <h3>SK<span className='dot'>.</span></h3>
                 </div>
