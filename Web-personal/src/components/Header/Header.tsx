@@ -23,8 +23,8 @@ function Header() {
                 </div>
                 <div className={`nav-menu ${isNavMenuHidden ? 'hide' : ''}`}>
                     <a href="#">Home</a>
-                    <a href="#">Career</a>
-                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Projects</a>
                     <a href="#">Contact</a>
                     <span className='v-line'></span>
                     <div className='socials'>

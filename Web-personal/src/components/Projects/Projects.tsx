@@ -1,23 +1,36 @@
 import WebDevelopmentImg from '../../public/images/web-development.svg';
+let TestImg = 'https://bit.ly/2GkldBe'
+
 import ProjectCard from './ProjectCard';
+import reactIcon from '../../public/images/react.svg';
+import typeScriptIcon from '../../public/images/typescript.svg';
+import sassIcon from '../../public/images/sass.svg'
 
 function Project() {
   const projects = [
     {
       title: 'Internship Management System',
-      image: WebDevelopmentImg
+      desc: '',
+      image: TestImg,
+      icons: [reactIcon, typeScriptIcon, sassIcon]
     },
     {
       title: 'GreenSHeart ReportCare Clinician',
-      image: WebDevelopmentImg
+      desc: '',
+      image: TestImg,
+      icons: [reactIcon, typeScriptIcon, sassIcon]
     },
     {
       title: 'Monash Time Tracker',
-      image: WebDevelopmentImg
+      desc: '',
+      image: TestImg,
+      icons: [reactIcon, typeScriptIcon, sassIcon]
     },
     {
       title: 'Web Development',
-      image: WebDevelopmentImg
+      desc: '',
+      image: TestImg,
+      icons: [reactIcon, typeScriptIcon, sassIcon ]
 
     }];
   return (
