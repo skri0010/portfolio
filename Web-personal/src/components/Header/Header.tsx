@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import './Header.scss'
-import reactIcon from '../../public/images/react.svg'
+import linkedInIcon from '../../public/images/linkedin.svg'
+import gitHubIcon from '../../public/images/github.svg'
+
 
 function Header() {
     const [isNavMenuHidden, setNavMenuHidden] = useState(true);
-
+    const linkedInLink = 'https://www.linkedin.com/in/suchit-krishna-9b269b1b2/';
+    const gitHubLink = 'https://github.com/skri0010';
     const handleHamburgerClick = () => {
         setNavMenuHidden(!isNavMenuHidden);
     };
@@ -21,7 +24,8 @@ function Header() {
                     <span className="line"></span>
                     <span className="line"></span>
                 </div>
-                <div className={`nav-menu ${isNavMenuHidden ? 'hide' : ''}`}>
+                <div className={`nav-blur ${isNavMenuHidden ? 'hide' : ''}`} ></div>
+                <div className={`nav-menu ${isNavMenuHidden ? 'hide-nav' : ''}`}>
                     <a href="#">Home</a>
                     <a href="#">Skills</a>
                     <a href="#">Projects</a>
@@ -29,8 +33,8 @@ function Header() {
                     <span className='v-line'></span>
                     <span className={`line`}></span>
                     <div className='socials'>
-                        <img src={reactIcon}></img>
-                        <img src={reactIcon}></img>
+                        <a href={linkedInLink}><img src={linkedInIcon}></img></a>
+                        <a href={gitHubLink}><img src={gitHubIcon}></img></a>
                     </div>
                 </div>
             </nav>
