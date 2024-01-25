@@ -14,7 +14,7 @@ function Header() {
         <>
             <nav className='navbar'>
                 <div className='logo'>
-                    <h3>SK<span className='dot'>.</span></h3>
+                    <h3>SK<span className='gold'>.</span></h3>
                 </div>
                 <div className='hamburger-menu' onClick={handleHamburgerClick}>
                     <span className="line"></span>
@@ -27,6 +27,7 @@ function Header() {
                     <a href="#">Projects</a>
                     <a href="#">Contact</a>
                     <span className='v-line'></span>
+                    <span className={`line`}></span>
                     <div className='socials'>
                         <img src={reactIcon}></img>
                         <img src={reactIcon}></img>

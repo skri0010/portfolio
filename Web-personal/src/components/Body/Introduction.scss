@@ -2,6 +2,11 @@
 
 .intro {
     padding: 2.5rem 1rem 5vh;
+
+    a {
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
 }
 
 .contact {
@@ -22,6 +27,10 @@
         color: $gold;
         margin: 2rem 0;
         padding: 1rem;
+        &:hover {
+            background-color: $gold;
+            color:$white;
+        }
     }
 }
 

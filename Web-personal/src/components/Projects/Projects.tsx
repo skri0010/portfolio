@@ -1,4 +1,3 @@
-import WebDevelopmentImg from '../../public/images/web-development.svg';
 let TestImg = 'https://bit.ly/2GkldBe'
 
 import ProjectCard from './ProjectCard';
@@ -10,25 +9,25 @@ function Project() {
   const projects = [
     {
       title: 'Internship Management System',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione illum ipsam deleniti delectus laudantium tempora aliquid officia, eligendi eveniet? Placeat odit deserunt saepe fuga, rerum voluptatum nulla aliquid dolorum?',
       image: TestImg,
       icons: [reactIcon, typeScriptIcon, sassIcon]
     },
     {
       title: 'GreenSHeart ReportCare Clinician',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione illum ipsam deleniti delectus laudantium tempora aliquid officia, eligendi eveniet? Placeat odit deserunt saepe fuga, rerum voluptatum nulla aliquid dolorum?',
       image: TestImg,
       icons: [reactIcon, typeScriptIcon, sassIcon]
     },
     {
       title: 'Monash Time Tracker',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione illum ipsam deleniti delectus laudantium tempora aliquid officia, eligendi eveniet? Placeat odit deserunt saepe fuga, rerum voluptatum nulla aliquid dolorum?',
       image: TestImg,
       icons: [reactIcon, typeScriptIcon, sassIcon]
     },
     {
       title: 'Web Development',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione illum ipsam deleniti delectus laudantium tempora aliquid officia, eligendi eveniet? Placeat odit deserunt saepe fuga, rerum voluptatum nulla aliquid dolorum?',
       image: TestImg,
       icons: [reactIcon, typeScriptIcon, sassIcon ]
 

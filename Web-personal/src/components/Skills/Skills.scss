@@ -21,6 +21,7 @@
 
     .skill-text {
         @include center;
+        padding: 5%;
         .text {
             font-size: 1.2rem;
             color: $white;
