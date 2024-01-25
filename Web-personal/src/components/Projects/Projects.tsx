@@ -5,6 +5,8 @@ import reactIcon from '../../public/images/react.svg';
 import typeScriptIcon from '../../public/images/typescript.svg';
 import sassIcon from '../../public/images/sass.svg'
 
+import reportCareImg from '../../public/images/reportcare.png'
+
 function Project() {
   const projects = [
     {
@@ -16,7 +18,7 @@ function Project() {
     {
       title: 'GreenSHeart ReportCare Clinician',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione illum ipsam deleniti delectus laudantium tempora aliquid officia, eligendi eveniet? Placeat odit deserunt saepe fuga, rerum voluptatum nulla aliquid dolorum?',
-      image: TestImg,
+      image: reportCareImg,
       icons: [reactIcon, typeScriptIcon, sassIcon]
     },
     {
