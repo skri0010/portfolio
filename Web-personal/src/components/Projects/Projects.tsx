@@ -6,13 +6,14 @@ import typeScriptIcon from '../../public/images/typescript.svg';
 import sassIcon from '../../public/images/sass.svg'
 
 import reportCareImg from '../../public/images/reportcare.png'
+import simpImg from '../../public/images/internshipSys.png'
 
 function Project() {
   const projects = [
     {
       title: 'Internship Management System',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione illum ipsam deleniti delectus laudantium tempora aliquid officia, eligendi eveniet? Placeat odit deserunt saepe fuga, rerum voluptatum nulla aliquid dolorum?',
-      image: TestImg,
+      image: simpImg,
       icons: [reactIcon, typeScriptIcon, sassIcon]
     },
     {

@@ -1,64 +1,72 @@
 @import '../../styles/styles.scss';
 
-.project-card {
-    position: relative;
-    height: 35vh;
-    width: auto;
-    padding-bottom: 1rem;
+.project-grid {
+    @include center;
+    flex-wrap: wrap;
 
-    border: solid;
-    border-width: 2px;
-    border-color: $grey;
-    border-radius: 15px;
+    .project-card {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        padding-bottom: 1rem;
+        margin: 3rem;
 
-    margin: 3rem;
-    background-color: $light-grey;
+        border: solid;
+        border-width: 2px;
+        border-color: $grey;
+        border-radius: 15px;
 
-    box-shadow: -5px 5px 10px $gold;
 
-    .project-img {
-        height: 50%;
-        
-        img {
-            border-radius: 15px 15px 0 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
+        background-color: $light-grey;
+
+        box-shadow: -5px 5px 10px $gold;
+
+        .project-img {
+            height: 50%;
+
+            img {
+                border-radius: 15px 15px 0 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+            }
         }
-    }
 
-    .text {
-        height: 40%;
-        text-align: center;
-        overflow: hidden;
+        .text {
+            height: 40%;
+            text-align: center;
+            overflow: hidden;
 
-        p {
-            font-size: 0.9rem;
+            p {
+                font-size: 0.9rem;
+                // margin: 50px;
+                overflow: auto;
+            }
         }
-    }
 
-    .icons {
-        height:10%;
-        @include center;
-        // padding: 10px;
-        img{
-            height: 100%;
-            margin: 0.2rem;
+        .icons {
+            height: 10%;
+            @include center;
+
+            // padding: 10px;
+            img {
+                height: 100%;
+                margin: 0.2rem;
+            }
         }
+
     }
-    
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:769px) {
     .project-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
-        grid-gap: 10px;
-        .item {
-            min-height: 200px;
-            margin: 5vh;
+
+        .project-card {
+            height: 400px;
+            width: 400px;
         }
+        
     }
-    
+
 
 }
