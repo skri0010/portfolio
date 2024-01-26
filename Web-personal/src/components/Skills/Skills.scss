@@ -42,6 +42,7 @@
         grid-template-columns: repeat(4, minmax(200px, 1fr));
         grid-gap: 10px;
         overflow: auto;
+        margin: 5% 0;
         .item {
             min-height: 200px;
             margin: 1vh;
