@@ -6,8 +6,8 @@
 
 .skill-card {
     background-color: $dark-grey;
-    height: 25vh;
-    width: 50vw;
+    height: 200px;
+    width: 50%;
     margin: 1rem auto;
     
     .skill-img {
@@ -21,6 +21,7 @@
 
     .skill-text {
         @include center;
+        padding: 5%;
         .text {
             font-size: 1.2rem;
             color: $white;
@@ -41,6 +42,7 @@
         grid-template-columns: repeat(4, minmax(200px, 1fr));
         grid-gap: 10px;
         overflow: auto;
+        margin: 5% 0;
         .item {
             min-height: 200px;
             margin: 1vh;
