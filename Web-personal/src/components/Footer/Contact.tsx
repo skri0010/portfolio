@@ -14,10 +14,10 @@ function Contact() {
 
             <div className='mediums'>
                 <ContactButton>
-                    <a href="mailto:Hello@vinayaksingh.com"><FaPhoneAlt size={22} className='icon'/>suchit.skrishna</a>
+                    <a href="mailto:suchit.skrishna@gmail.com"><MdOutlineMail size={30} className='icon'/>Gmail: suchit.skrishna</a>
                 </ContactButton>
                 <ContactButton>
-                    <a href="tel:+919630576848"><MdOutlineMail size={30} className='icon'/>(+91) 8484090481</a>
+                    <a href="tel:+918484090481"><FaPhoneAlt size={22} className='icon'/>(+91) 8484090481</a>
                 </ContactButton>
             </div>
         </div>

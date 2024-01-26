@@ -27,6 +27,8 @@
             a {
                 @include center;
                 color: white;
+                height: 100px;
+                width:300px;
                 font-size: 1.2rem;
             }
         }

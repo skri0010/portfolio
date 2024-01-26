@@ -1,5 +1,6 @@
 import './Introduction.scss'
 import PersonalImage from '../../public/images/20230219_091010.jpg'
+import CV from '../../public/images/SSKrishnaCV.pdf'
 
 function Introduction() {
     return (
@@ -18,7 +19,7 @@ function Introduction() {
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolores esse facere illo aspernatur
                 </p>
-                <a className='gold'>LEARN MORE {'>'}</a>
+                <a className='gold' href={CV}>LEARN MORE {'>'}</a>
 
             </div>
 
