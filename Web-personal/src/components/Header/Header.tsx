@@ -4,6 +4,7 @@ import linkedInIcon from '../../public/images/linkedin.svg'
 import gitHubIcon from '../../public/images/github.svg'
 
 
+
 function Header() {
     const [isNavMenuHidden, setNavMenuHidden] = useState(true);
     const linkedInLink = 'https://www.linkedin.com/in/suchit-krishna-9b269b1b2/';
@@ -26,10 +27,30 @@ function Header() {
                 </div>
                 <div className={`nav-blur ${isNavMenuHidden ? 'hide' : ''}`} ></div>
                 <div className={`nav-menu ${isNavMenuHidden ? 'hide-nav' : ''}`}>
-                    <a href="#">Home</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact</a>
+                    <a onClick={ () => {
+                        const element = document.getElementById('intro');
+                        element?.scrollIntoView(
+                            {behavior:'smooth'
+                        })
+                    }}>Home</a>
+                    <a onClick={ () => {
+                        const element = document.getElementById('skills');
+                        element?.scrollIntoView(
+                            {behavior:'smooth'
+                        })
+                    }}>Skills</a>
+                    <a onClick={ () => {
+                        const element = document.getElementById('projects');
+                        element?.scrollIntoView(
+                            {behavior:'smooth'
+                        })
+                    }}>Projects</a>
+                    <a onClick={ () => {
+                        const element = document.getElementById('contacts');
+                        element?.scrollIntoView(
+                            {behavior:'smooth'
+                        })
+                    }}>Contact</a>
                     <span className='v-line'></span>
                     <span className={`line`}></span>
                     <div className='socials'>

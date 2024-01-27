@@ -9,25 +9,25 @@ function App() {
 
   return (
     <>
-      <Header>
+        <Header>
 
-      </Header>
-      <Introduction>
+        </Header>
+        <Introduction>
 
-      </Introduction>
+        </Introduction>
 
-      <Skills>
+        <Skills>
 
-      </Skills>
+        </Skills>
 
-      {/* <div className='experience'>
-
-        <div className='name'> List of experiences</div>
-      </div> */}
-      <Projects></Projects>
-      <Contact></Contact>
-
-      
+        {
+          /* <div className='experience'>
+  
+            <div className='name'> List of experiences</div>
+          </div> */
+        }
+        <Projects></Projects>
+        <Contact></Contact>
     </>
   )
 }

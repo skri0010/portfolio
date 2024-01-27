@@ -36,7 +36,7 @@ function Project() {
 
     }];
   return (
-    <div className='projects section'>
+    <div className='projects section' id='projects'>
       <div className='text-area'>
         <h4>PORTFOLIO</h4>
         <h2>My Masterpiece Collection</h2>

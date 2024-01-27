@@ -5,7 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 function Contact() {
     return (
-        <div className='contacts section'>
+        <div className='contacts section' id='contacts'>
             <div className='text-area'>
                 <h4>CONTACT ME</h4>
                 <h2>Ways To Contact Me</h2>

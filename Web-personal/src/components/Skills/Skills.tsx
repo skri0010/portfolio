@@ -24,7 +24,7 @@ function Skills() {
     }];
 
   return (
-    <div className='skills section'>
+    <div className='skills section' id='skills'>
       <div className='text-area'>
         <h4>SKILLS</h4>
         <h2>What I Am Great At</h2>
