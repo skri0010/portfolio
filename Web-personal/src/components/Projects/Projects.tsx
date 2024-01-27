@@ -1,12 +1,12 @@
-let TestImg = 'https://bit.ly/2GkldBe'
-
 import ProjectCard from './ProjectCard';
 import reactIcon from '../../public/images/react.svg';
 import typeScriptIcon from '../../public/images/typescript.svg';
 import sassIcon from '../../public/images/sass.svg'
 
-import reportCareImg from '../../public/images/reportcare.png'
-import simpImg from '../../public/images/internshipSys.png'
+import reportCareImg from '../../public/images/test2.png'
+import simpImg from '../../public/images/test.png'
+import timeTrackerImg from '../../public/images/timeTracker.png'
+import covidSystemImg from '../../public/images/covidSystem.png'
 
 function Project() {
   const projects = [
@@ -25,13 +25,13 @@ function Project() {
     {
       title: 'Monash Time Tracker',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione illum ipsam deleniti delectus laudantium tempora aliquid officia, eligendi eveniet? Placeat odit deserunt saepe fuga, rerum voluptatum nulla aliquid dolorum?',
-      image: TestImg,
+      image: timeTrackerImg,
       icons: [reactIcon, typeScriptIcon, sassIcon]
     },
     {
-      title: 'Web Development',
+      title: 'Covid Test Booking System',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione illum ipsam deleniti delectus laudantium tempora aliquid officia, eligendi eveniet? Placeat odit deserunt saepe fuga, rerum voluptatum nulla aliquid dolorum?',
-      image: TestImg,
+      image: covidSystemImg,
       icons: [reactIcon, typeScriptIcon, sassIcon ]
 
     }];
