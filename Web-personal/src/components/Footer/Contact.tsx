@@ -9,7 +9,7 @@ function Contact() {
             <div className='text-area'>
                 <h4>CONTACT ME</h4>
                 <h2>Ways To Contact Me</h2>
-                <p>If you LOOOOOOOOVEEEE EAW What u See PLEASEPLEASEPLEASE CALL ME PLEASEPLEASEPLEASE</p>
+                <p>If you find my profile intriguing, please don't hesitate to reach out. I welcome connections through any of the following channels.</p>
             </div>
 
             <div className='mediums'>

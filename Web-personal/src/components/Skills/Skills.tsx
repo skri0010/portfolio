@@ -29,8 +29,7 @@ function Skills() {
         <h4>SKILLS</h4>
         <h2>What I Am Great At</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Expedita quas facere tempore nobis, vel natus, dolor eligendi a at odit officia,
+        Throughout my academic journey, I have acquired a diverse set of skills through the practice of tools to enhance my capabilities, enabling me to effectively achieve my goals.
         </p>
       </div>
 

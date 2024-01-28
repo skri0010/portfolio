@@ -32,7 +32,7 @@ function Project() {
       title: 'Covid Test Booking System',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione illum ipsam deleniti delectus laudantium tempora aliquid officia, eligendi eveniet? Placeat odit deserunt saepe fuga, rerum voluptatum nulla aliquid dolorum?',
       image: covidSystemImg,
-      icons: [reactIcon, typeScriptIcon, sassIcon ]
+      icons: [reactIcon, typeScriptIcon, sassIcon]
 
     }];
   return (
@@ -41,8 +41,7 @@ function Project() {
         <h4>PORTFOLIO</h4>
         <h2>My Masterpiece Collection</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Expedita quas facere tempore nobis, vel natus, dolor eligendi a at odit officia,
+        My projects span across web and mobile development, incorporating a diverse range of libraries and frameworks for the frontend, coupled with intricate APIs and services for the backend.
         </p>
       </div>
 

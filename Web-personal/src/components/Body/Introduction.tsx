@@ -8,7 +8,7 @@ function Introduction() {
             <div className='contact item'>
                 <h1>Suchit<h1>Krishna<span className='gold'>.</span></h1></h1>
                 <span className='line'></span>
-                <p style={{ whiteSpace: 'pre-line' }}>{'Lorem ipsum | dolor \n sit amet | consectetur'}</p>
+                <p style={{ whiteSpace: 'pre-line' }}>{'Creating | Innovating\n Adapting | Evolving'}</p>
                 <button className='contact-me-btn' id='contactMeBtn'>CONTACT ME</button>
             </div>
 
@@ -17,9 +17,8 @@ function Introduction() {
             </div>
             <div className='summary item'>
                 <h4>INTRODUCTION</h4>
-                <h2>Software Engineer,<br></br> Full Stack Web Developer</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolores esse facere illo aspernatur
+                <h2>Software Engineer,<br></br> Full Stack Developer</h2>
+                <p> Software Engineering graduate passionate about exploring diverse avenues within the field.
                 </p>
                 <a className='gold' href={CV}>LEARN MORE {'>'}</a>
 
