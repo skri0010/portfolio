@@ -9,7 +9,13 @@ function Introduction() {
                 <h1>Suchit<h1>Krishna<span className='gold'>.</span></h1></h1>
                 <span className='line'></span>
                 <p style={{ whiteSpace: 'pre-line' }}>{'Creating | Innovating\n Adapting | Evolving'}</p>
-                <button className='contact-me-btn' id='contactMeBtn'>CONTACT ME</button>
+                <button className='contact-me-btn' id='contactMeBtn' onClick={() => {
+                    const element = document.getElementById('contacts');
+                    element?.scrollIntoView(
+                        {
+                            behavior: 'smooth'
+                        })
+                }}>CONTACT ME</button>
             </div>
 
             <div className='image item middle-column'>

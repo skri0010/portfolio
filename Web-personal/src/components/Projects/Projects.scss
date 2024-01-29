@@ -6,8 +6,8 @@
 
     .project-card {
         position: relative;
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 400px;
         padding-bottom: 1rem;
         margin: 3rem;
 
@@ -36,14 +36,15 @@
             overflow: hidden;
 
             p {
+                text-align: center;
                 font-size: 0.9rem;
-                // margin: 50px;
+                margin: 0 5%;
                 overflow: auto;
             }
         }
 
         .icons {
-            height: 10%;
+            height: 8%;
             @include center;
 
             // padding: 10px;

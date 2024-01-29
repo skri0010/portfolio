@@ -2,6 +2,7 @@ import SkillCard from './SkillCard';
 import WebDevelopmentImg from '../../public/images/web-development.svg'
 import MobileDevelopmentImg from '../../public/images/mobile-development.svg'
 import DatabaseImg from '../../public/images/database.svg'
+import DataAnalyticsImg from '../../public/images/data-analytics.svg'
 
 function Skills() {
   const skills = [
@@ -14,12 +15,12 @@ function Skills() {
       image: MobileDevelopmentImg
     },
     {
-      title: 'Database',
+      title: 'Database Management',
       image: DatabaseImg
     },
     {
-      title: 'AI & ML',
-      image: WebDevelopmentImg
+      title: 'Data Analytics',
+      image: DataAnalyticsImg
 
     }];
 

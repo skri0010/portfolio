@@ -15,10 +15,13 @@
     z-index: 1;
 
     /* logo style  */
-    .logo img {
-        width: 4rem;
-        height: 4rem;
-        margin-left: 1rem;
+    .logo {
+        cursor: pointer;
+        img {
+            width: 4rem;
+            height: 4rem;
+            margin-left: 1rem;
+        }
     }
 
     .hamburger-menu {
@@ -165,6 +168,7 @@
                     cursor: pointer;
                 }
             }
+
             height: 1.5rem;
             display: inline-block;
 

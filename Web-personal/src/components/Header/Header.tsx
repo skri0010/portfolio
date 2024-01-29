@@ -17,7 +17,13 @@ function Header() {
     return (
         <>
             <nav className='navbar'>
-                <div className='logo'>
+                <div className='logo' onClick={() => {
+                    const element = document.getElementById('intro');
+                    element?.scrollIntoView(
+                        {
+                            behavior: 'smooth'
+                        })
+                }}>
                     <h3>SK<span className='gold'>.</span></h3>
                 </div>
                 <div className='hamburger-menu' onClick={handleHamburgerClick}>
@@ -27,29 +33,33 @@ function Header() {
                 </div>
                 <div className={`nav-blur ${isNavMenuHidden ? 'hide' : ''}`} ></div>
                 <div className={`nav-menu ${isNavMenuHidden ? 'hide-nav' : ''}`}>
-                    <a onClick={ () => {
+                    <a onClick={() => {
                         const element = document.getElementById('intro');
                         element?.scrollIntoView(
-                            {behavior:'smooth'
-                        })
+                            {
+                                behavior: 'smooth'
+                            })
                     }}>Home</a>
-                    <a onClick={ () => {
+                    <a onClick={() => {
                         const element = document.getElementById('skills');
                         element?.scrollIntoView(
-                            {behavior:'smooth'
-                        })
+                            {
+                                behavior: 'smooth'
+                            })
                     }}>Skills</a>
-                    <a onClick={ () => {
+                    <a onClick={() => {
                         const element = document.getElementById('projects');
                         element?.scrollIntoView(
-                            {behavior:'smooth'
-                        })
+                            {
+                                behavior: 'smooth'
+                            })
                     }}>Projects</a>
-                    <a onClick={ () => {
+                    <a onClick={() => {
                         const element = document.getElementById('contacts');
                         element?.scrollIntoView(
-                            {behavior:'smooth'
-                        })
+                            {
+                                behavior: 'smooth'
+                            })
                     }}>Contact</a>
                     <span className='v-line'></span>
                     <span className={`line`}></span>
