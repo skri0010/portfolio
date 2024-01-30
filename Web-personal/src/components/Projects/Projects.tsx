@@ -2,7 +2,6 @@ import ProjectCard from './ProjectCard';
 
 import reactIcon from '../../public/images/react.svg';
 import typeScriptIcon from '../../public/images/typescript.svg';
-import sassIcon from '../../public/images/sass.svg'
 import mongoDbIcon from '../../public/images/mongodb.svg'
 import vueIcon from '../../public/images/vuejs.svg'
 import nodeJSIcon from '../../public/images/nodejs.svg'
