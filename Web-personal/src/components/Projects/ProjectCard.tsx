@@ -18,7 +18,7 @@ function ProjectCard(props: ProjectProps) {
                     return (
                         <div className='project-card item'>
                             <div className='project-img'>
-                                <img src={project.image}></img>
+                                <img src={project.image} loading='lazy'></img>
                             </div>
                             <div className='text'>
                                 <h4> {project.title}</h4>
@@ -28,7 +28,7 @@ function ProjectCard(props: ProjectProps) {
                             <div className='icons'>
                                 {project.icons.map(icon => {
                                     return (
-                                        <img src={icon}></img>
+                                        <img src={icon} loading='lazy'></img>
                                     )
                                 })}
                             </div>

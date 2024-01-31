@@ -22,7 +22,7 @@ function Project() {
   const projects = [
     {
       title: 'Internship Management System',
-      desc: 'A website for Monash University that facilitates internship management, enabling employers to post job opportunities, students to discover and apply for internships, and teachers to monitor students internship progress',
+      desc: 'A website for Monash University that facilitates internship management, enabling employers to post job opportunities, students to discover and apply for internships, and teachers to monitor student internships',
       image: simpImg,
       icons: [mongoDbIcon, vueIcon, nodeJSIcon]
     },

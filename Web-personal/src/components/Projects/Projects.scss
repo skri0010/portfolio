@@ -6,10 +6,10 @@
 
     .project-card {
         position: relative;
-        height: 400px;
-        width: 400px;
-        padding-bottom: 1rem;
-        margin: 3rem;
+        height: 330px;
+        width: 330px;
+        padding-bottom: 0.4rem;
+        margin: 2rem 0;
 
         border: 1px solid $light-grey;
         border-radius: 15px;
@@ -63,6 +63,7 @@
         .project-card {
             height: 400px;
             width: 400px;
+            margin: 2rem ;
         }
 
     }
