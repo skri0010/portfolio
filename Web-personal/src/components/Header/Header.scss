@@ -1,190 +1,179 @@
-@import '../../styles/styles.scss';
+@import "../../styles/styles.scss";
 
 /* navbar styling */
 .navbar {
-    transition: translate 5s;
-    position: sticky;
+  transition: translate 5s;
+  position: sticky;
+  top: 0;
+  background-color: rgba(44, 45, 50, 0.716);
+
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  z-index: 1;
+
+  /* logo style  */
+  .logo {
+    cursor: pointer;
+    img {
+      width: 4rem;
+      height: 4rem;
+      margin-left: 1rem;
+    }
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+
+    .line {
+      display: block;
+      width: 2rem;
+      height: 4px;
+      margin-bottom: 5px;
+      background-color: $gold;
+    }
+  }
+
+  .nav-blur {
+    position: fixed;
     top: 0;
-    background-color: rgba(44, 45, 50, 0.716);
+    left: 0;
+    z-index: -2;
 
-    display: flex;
-    height: 4rem;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1rem;
-    z-index: 1;
+    height: 100vh;
+    width: 100vw;
 
-    /* logo style  */
-    .logo {
-        cursor: pointer;
-        img {
-            width: 4rem;
-            height: 4rem;
-            margin-left: 1rem;
-        }
+    padding-top: 100px; // Causing issue
+    background-color: rgba(44, 45, 50, 0.141);
+    backdrop-filter: blur(2px);
+  }
+
+  .nav-menu {
+    box-shadow: -1px 0 20px $light-grey;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    height: 100%;
+    width: 70%;
+
+    padding-top: 100px; // Causing issue
+    background-color: $dark-grey;
+
+    .line {
+      display: block;
+      width: 5rem;
+      height: 2px;
+      margin: 50px auto;
+      background-color: $gold;
     }
 
-    .hamburger-menu {
-        cursor: pointer;
+    a {
+      font-size: 1.3rem;
+      display: block;
+      text-align: center;
+      padding: 4%;
+      color: $white;
 
-        .line {
-            display: block;
-            width: 2rem;
-            height: 4px;
-            margin-bottom: 5px;
-            background-color: $gold;
-        }
+      &:hover {
+        background-color: $gold;
+      }
+    }
+  }
+
+  .socials {
+    // padding-top: 2rem;
+    @include center;
+
+    a {
+      all: initial;
     }
 
-    .nav-blur {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -2;
-
-        height: 100vh;
-        width: 100vw;
-
-        padding-top: 100px; // Causing issue
-        background-color: rgba(44, 45, 50, 0.141);
-        backdrop-filter: blur(2px);
+    img {
+      height: 50px;
+      margin: 0.3rem;
+      cursor: pointer;
     }
-
-    .nav-menu {
-        box-shadow: -1px 0 20px $light-grey;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: -1;
-
-        height: 100%;
-        width: 70%;
-
-        padding-top: 100px; // Causing issue
-        background-color: $dark-grey;
-
-        .line {
-            display: block;
-            width: 5rem;
-            height: 2px;
-            margin: 50px auto;
-            background-color: $gold;
-
-        }
-
-        a {
-            font-size: 1.3rem;
-            display: block;
-            text-align: center;
-            padding: 4%;
-            color: $white;
-
-            &:hover {
-                background-color: $gold;
-            }
-        }
-
-
-    }
-
-    .socials {
-        // padding-top: 2rem;
-        @include center;
-
-        a {
-            all: initial;
-        }
-
-        img {
-            height: 50px;
-            margin: 0.3rem;
-            cursor: pointer;
-        }
-    }
+  }
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .hide-nav {
-    transform: translateX(102%);
+  transform: translateX(102%);
 }
 
-
-
-
-
 /* for Desktop view  */
-@media screen and (min-width:769px) {
-    .navbar {
-        // justify-content: space-around;
-        padding: 1rem 10vw;
+@media screen and (min-width: 769px) {
+  .navbar {
+    // justify-content: space-around;
+    padding: 1rem 10vw;
 
-        .nav-menu {
-            transform: translateX(0);
-            box-shadow: none;
-            display: block;
-            position: static;
-            width: auto;
-            margin-right: 20px;
-            background: none;
-            padding: 0;
-            margin-bottom: 30px;
+    .nav-menu {
+      transform: translateX(0);
+      box-shadow: none;
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+      padding: 0;
+      margin-bottom: 30px;
 
-            a {
-                display: inline-block;
-                padding: 15px 20px;
+      a {
+        display: inline-block;
+        padding: 15px 20px;
 
-                &:hover {
-                    background-color: $gold;
-                    border-radius: 5px;
-                    cursor: pointer;
-
-                }
-            }
-
-            .line {
-                display: none;
-            }
+        &:hover {
+          background-color: $gold;
+          border-radius: 5px;
+          cursor: pointer;
         }
+      }
 
-        .v-line {
-            display: inline-block;
-            width: 3px;
-            height: 2rem;
-            background-color: $gold;
-            position: relative;
-            margin: 0 10px;
-            top: 10px;
-        }
-
-        .socials {
-            a {
-                all: revert;
-
-                &:hover {
-                    background-color: transparent;
-                    cursor: pointer;
-                }
-            }
-
-            height: 1.5rem;
-            display: inline-block;
-
-            img {
-                margin: 5px;
-                height: 30px;
-                position: relative;
-                top: 10px;
-            }
-        }
-    }
-
-    .hamburger-menu {
+      .line {
         display: none;
+      }
     }
 
+    .v-line {
+      display: inline-block;
+      width: 3px;
+      height: 2rem;
+      background-color: $gold;
+      position: relative;
+      margin: 0 10px;
+      top: 10px;
+    }
 
+    .socials {
+      a {
+        all: revert;
 
+        &:hover {
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+
+      height: 1.5rem;
+      display: inline-block;
+
+      img {
+        margin: 5px;
+        height: 30px;
+        position: relative;
+        top: 10px;
+      }
+    }
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
 }

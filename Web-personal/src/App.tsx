@@ -1,35 +1,26 @@
-import './styles/styles.scss'
-import Header from './components/Header/Header'
-import Introduction from './components/Body/Introduction'
-import Skills from './components/Skills/Skills'
-import Projects from './components/Projects/Projects'
-import Contact from './components/Footer/Contact'
+import "./styles/styles.scss";
+import Header from "./components/Header/Header";
+import Introduction from "./components/Body/Introduction";
+import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Footer/Contact";
 
 function App() {
-
   return (
     <>
-        <Header>
+      <Header></Header>
+      <Introduction></Introduction>
 
-        </Header>
-        <Introduction>
+      <Skills></Skills>
 
-        </Introduction>
-
-        <Skills>
-
-        </Skills>
-
-        {
-          /* <div className='experience'>
+      {/* <div className='experience'>
   
             <div className='name'> List of experiences</div>
-          </div> */
-        }
-        <Projects></Projects>
-        <Contact></Contact>
+          </div> */}
+      <Projects></Projects>
+      <Contact></Contact>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

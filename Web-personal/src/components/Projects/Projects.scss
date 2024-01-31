@@ -1,72 +1,66 @@
-@import '../../styles/styles.scss';
+@import "../../styles/styles.scss";
 
 .project-grid {
-    @include center;
-    flex-wrap: wrap;
+  @include center;
+  flex-wrap: wrap;
 
-    .project-card {
-        position: relative;
-        height: 330px;
-        width: 330px;
-        padding-bottom: 0.4rem;
-        margin: 2rem 0;
+  .project-card {
+    position: relative;
+    height: 330px;
+    width: 330px;
+    padding-bottom: 0.4rem;
+    margin: 2rem 0;
 
-        border: 1px solid $light-grey;
-        border-radius: 15px;
+    border: 1px solid $light-grey;
+    border-radius: 15px;
 
+    background-color: $light-grey;
 
-        background-color: $light-grey;
+    box-shadow: -10px 5px 10px $grey;
 
-        box-shadow: -10px 5px 10px $grey;
+    .project-img {
+      height: 50%;
 
-        .project-img {
-            height: 50%;
-
-            img {
-                border-radius: 15px 15px 0 0;
-                height: 100%;
-                width: 100%;
-                display: flex;
-            }
-        }
-
-        .text {
-            height: 40%;
-            text-align: center;
-            overflow: hidden;
-
-            p {
-                text-align: center;
-                font-size: 0.9rem;
-                margin: 0 5%;
-                overflow: auto;
-            }
-        }
-
-        .icons {
-            height: 8%;
-            @include center;
-
-            // padding: 10px;
-            img {
-                height: 100%;
-                margin: 0.2rem;
-            }
-        }
-
+      img {
+        border-radius: 15px 15px 0 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+      }
     }
+
+    .text {
+      height: 40%;
+      text-align: center;
+      overflow: hidden;
+
+      p {
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 0 5%;
+        overflow: auto;
+      }
+    }
+
+    .icons {
+      height: 8%;
+      @include center;
+
+      // padding: 10px;
+      img {
+        height: 100%;
+        margin: 0.2rem;
+      }
+    }
+  }
 }
 
-@media screen and (min-width:769px) {
-    .project-grid {
-
-        .project-card {
-            height: 400px;
-            width: 400px;
-            margin: 2rem ;
-        }
-
+@media screen and (min-width: 769px) {
+  .project-grid {
+    .project-card {
+      height: 400px;
+      width: 400px;
+      margin: 2rem;
     }
-
-
+  }
 }

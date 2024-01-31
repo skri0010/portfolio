@@ -1,81 +1,84 @@
-@import '../../styles/styles.scss';
+@import "../../styles/styles.scss";
 
 .intro {
-    padding: 2.5rem 1rem 5vh;
+  padding: 2.5rem 1rem 5vh;
 
-    a {
-        font-size: 0.9rem;
-        font-weight: lighter;
-    }
+  a {
+    font-size: 0.9rem;
+    font-weight: lighter;
+  }
 }
 
 .contact {
+  .line {
+    margin: 1rem 0 1rem 0;
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background-color: $gold;
+    cursor: pointer;
+  }
 
-    .line {
-        margin: 1rem 0 1rem 0;
-        display: block;
-        width: 3rem;
-        height: 2px;
-        background-color: $gold;
-        cursor: pointer;
+  .contact-me-btn {
+    background: transparent;
+    border-radius: 3px;
+    border: 2px solid $gold;
+    color: $gold;
+    margin: 2rem 0;
+    padding: 1rem;
+    &:hover {
+      background-color: $gold;
+      color: $white;
     }
-
-    .contact-me-btn {
-        background: transparent;
-        border-radius: 3px;
-        border: 2px solid $gold;
-        color: $gold;
-        margin: 2rem 0;
-        padding: 1rem;
-        &:hover {
-            background-color: $gold;
-            color:$white;
-        }
-    }
+  }
 }
 
 .image {
-    @include center;
-
-    .personal-img {
-        height: 18rem;
-        ;
-        border-radius: 50%;
-        border-style: solid;
-        border-color: $gold;
-    }
+  @include center;
+  position: relative;
+  .circle {
+    z-index: -2;
+    position: absolute;
+    top: -10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(35, 36, 44);
+  }
+  .personal-img {
+    height: 18rem;
+    border-radius: 50%;
+  }
 }
 
+@media screen and (min-width: 769px) {
+  .intro {
+    padding: 5vw 10vw 0;
+  }
 
-.image {
-    padding: 0 0 1rem;
-}
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
 
-@media screen and (min-width:769px) {
-    .intro {
-        padding: 5vw 10vw 0;
+    .item {
+      min-height: 200px;
+      margin: 0 1vh;
     }
 
-    .intro-grid {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-gap: 10px;
+    .middle-column {
+      grid-column: 2;
 
-        .item {
-            min-height: 200px;
-            margin: 1vh;
-        }
+      .circle {
+        height: 300px;
+        width: 300px;
+      }
 
-        .middle-column {
-            grid-column: 2;
-
-            img {
-                height: 30vw;
-            }
-
-        }
+      img {
+        height: 30vw;
+        border-radius: 0%;
+        overflow: hidden;
+      }
     }
-
-
-
+  }
 }

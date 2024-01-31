@@ -1,53 +1,61 @@
-@import '../../styles/styles.scss';
+@import "../../styles/styles.scss";
 
 .skills {
-    background-color: $light-grey;
+  background-color: $light-grey;
 }
 
 .skill-card {
-    background-color: $dark-grey;
-    height: 200px;
-    width: 50%;
-    margin: 1rem auto;
-    
-    .skill-img {
-        padding-top: 2rem;
-        @include center;
-    
-        img {
-            height: 50px;
-        }
-    }
+  background-color: $dark-grey;
+  height: 200px;
+  width: 50%;
+  margin: 1rem auto;
 
-    .skill-text {
-        @include center;
-        padding: 5%;
-        .text {
-            font-size: 1.2rem;
-            color: $white;
-            display: flex;
-            text-align: center;
-            padding-top: 1rem;
-        }
+  .skill-img {
+    padding-top: 2rem;
+    @include center;
+
+    img {
+      height: 50px;
     }
+  }
+
+  .skill-text {
+    @include center;
+    padding: 5%;
+    .text {
+      font-size: 1.2rem;
+      color: $white;
+      display: flex;
+      text-align: center;
+      padding-top: 1rem;
+    }
+  }
 }
 
-@media screen and (min-width:600px) {
-    .skill-card {
-        width: auto;
+@media screen and (min-width: 600px) {
+  .skill-card {
+    width: auto;
+    &:hover {
+      background-color: lighten(black, 5%);
     }
-
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(200px, 1fr));
-        grid-gap: 10px;
-        overflow: auto;
-        margin: 5% 0;
-        .item {
-            min-height: 200px;
-            margin: 1vh;
-        }
+    &:focus {
+      outline: 1px dashed yellow;
+      outline-offset: 3px;
     }
+    .skill-text {
+      transform: translateY(calc(100% - 4.5rem));
+    }
+  }
 
-
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-gap: 10px;
+    overflow: auto;
+    margin: 5% 0;
+    .item {
+      min-height: 200px;
+      margin: 1vh;
+    }
+  }
 }
