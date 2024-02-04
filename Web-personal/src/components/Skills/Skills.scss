@@ -33,25 +33,49 @@
     }
   }
 
+  .card__front {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+  }
+
+  .card__inner {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    transition: top 0.5s ease-in-out;
+
+    visibility: hidden;
+
+    .skill-icons {
+      @include center;
+      margin: 2rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      img {
+        margin: 2%;
+        height: 40px;
+      }
+    }
+  }
+
   &:hover {
     background-color: lighten(black, 5%);
     .card__inner {
       top: 0;
       visibility: visible;
     }
-  }
 
-  .card__inner {
-    height: 200px;
-    position: absolute;
-    top: 200px;
-    transition: top 0.5s ease-in-out;
-
-    visibility: hidden;
+    .card__front {
+      top: -200px;
+    }
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 769px) {
   .skill-card {
     width: auto;
   }

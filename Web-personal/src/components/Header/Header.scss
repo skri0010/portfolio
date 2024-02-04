@@ -85,11 +85,13 @@
   }
 
   .socials {
-    // padding-top: 2rem;
     @include center;
 
     a {
       all: initial;
+      &:hover {
+        background-color: transparent;
+      }
     }
 
     img {
@@ -105,11 +107,11 @@
 }
 
 .hide-nav {
-  transform: translateX(102%);
+  transform: translateX(110%);
 }
 
 /* for Desktop view  */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 932px) {
   .navbar {
     // justify-content: space-around;
     padding: 1rem 10vw;
