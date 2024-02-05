@@ -22,26 +22,30 @@ function Project() {
   const projects = [
     {
       title: "Internship Management System",
-      desc: "A website for Monash University that facilitates internship management, enabling employers to post job opportunities, students to discover and apply for internships, and teachers to monitor student internships",
+      desc: "A streamlined internship platform where employers post opportunities, students apply, and teachers monitor internships",
       image: simpImg,
+      link: "https://github.com/skri0010/Internship-Management-System",
       icons: [mongoDbIcon, vueIcon, nodeJSIcon],
     },
     {
       title: "GreenSHeart ReportCare Clinician",
-      desc: "A versatile mobile and web application designed for clinicians in hospital settings to efficiently oversee and monitor patients diagnosed with heart failure (HF) diseases",
+      desc: "A mobile and web application designed for clinicians to efficiently monitor patients diagnosed with heart failure diseases",
       image: reportCareImg,
+      link: "https://github.com/skri0010/reportcare-clinician",
       icons: [reactIcon, typeScriptIcon, awsIcon],
     },
     {
       title: "Monash Time Tracker",
-      desc: "A project management website tailored for Monash University teachers, allowing them to oversee and ensure equal contributions from students collaborating in groups to complete assignments.",
+      desc: "A project management website for Monash University teachers to oversee student group assignments and ensure equal contributions",
       image: timeTrackerImg,
+      link: "https://github.com/skri0010/Monash-Time-Tracker",
       icons: [htmlIcon, cssIcon, javacriptIcon, firebaseIcon],
     },
     {
       title: "Covid Test Booking System",
-      desc: "A COVID test booking app for the public to schedule tests, allowing state governments to track the total tests and record positive/negative results.",
+      desc: "A COVID test booking app for the public to schedule tests, allowing state governments to track the total tests and record results",
       image: covidSystemImg,
+      link: "https://github.com/skri0010/Covid-Booking-System",
       icons: [javaIcon, apiImg],
     },
   ];

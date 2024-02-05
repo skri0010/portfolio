@@ -39,7 +39,6 @@ function Skills() {
         htmlIcon,
         cssIcon,
         typescriptIcon,
-        nodeJSIcon,
         reactIcon,
         vueIcon,
         laravelIcon,
@@ -53,7 +52,7 @@ function Skills() {
     {
       title: "Database Management",
       image: DatabaseImg,
-      icons: [mongodbIcon, sqlIcon, oracleIcon, mysqlIcon],
+      icons: [mongodbIcon, sqlIcon, oracleIcon, mysqlIcon, nodeJSIcon],
     },
     {
       title: "Data Analytics",

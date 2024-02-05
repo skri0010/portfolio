@@ -30,6 +30,7 @@
       display: flex;
       text-align: center;
       padding-top: 1rem;
+      font-weight: bold;
     }
   }
 
@@ -38,7 +39,7 @@
     width: 100%;
     position: absolute;
     top: 0;
-    transition: top 0.5s ease-in-out;
+    transition: top 0.4s ease-in-out;
   }
 
   .card__inner {
@@ -46,14 +47,16 @@
     width: 100%;
     position: absolute;
     top: 200px;
-    transition: top 0.5s ease-in-out;
+    transition: top 0.4s ease-in-out;
 
     visibility: hidden;
 
     .skill-icons {
       @include center;
-      margin: 2rem;
+      height: 100%;
+      // margin: 1rem;
       flex-direction: row;
+      align-content: center;
       flex-wrap: wrap;
       img {
         margin: 2%;
@@ -63,7 +66,7 @@
   }
 
   &:hover {
-    background-color: lighten(black, 5%);
+    background-image: radial-gradient($light-grey, $dark-grey, $darkest-grey);
     .card__inner {
       top: 0;
       visibility: visible;
