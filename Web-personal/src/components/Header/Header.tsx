@@ -82,10 +82,10 @@ function Header() {
           <span className={`line`}></span>
           <div className="socials">
             <a href={linkedInLink}>
-              <img src={linkedInIcon}></img>
+              <img src={linkedInIcon} alt="linkedIn"></img>
             </a>
             <a href={gitHubLink}>
-              <img src={gitHubIcon}></img>
+              <img src={gitHubIcon} alt="gitHub"></img>
             </a>
           </div>
         </div>
