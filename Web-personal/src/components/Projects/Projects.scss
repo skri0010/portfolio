@@ -3,6 +3,7 @@
 .project-grid {
   @include center;
   flex-wrap: wrap;
+  flex-direction: column;
 
   .project-card {
     position: relative;
@@ -16,7 +17,7 @@
 
     background-color: $light-grey;
 
-    box-shadow: -10px 5px 10px $grey;
+    box-shadow: -10px 5px 10px $darkest-grey;
 
     .project-img {
       height: 50%;
@@ -30,7 +31,7 @@
     }
 
     .text {
-      height: 40%;
+      height: 38%;
       text-align: center;
       overflow: hidden;
 
@@ -39,6 +40,9 @@
         font-size: 0.9rem;
         margin: 0 5%;
         overflow: auto;
+      }
+      h4 {
+        padding-top: 1rem;
       }
     }
 
@@ -57,10 +61,16 @@
 
 @media screen and (min-width: 769px) {
   .project-grid {
+    flex-direction: row;
     .project-card {
       height: 400px;
       width: 400px;
       margin: 2rem;
+      .text {
+        h4 {
+          padding-top: 2.5vh;
+        }
+      }
     }
   }
 }

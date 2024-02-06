@@ -6,11 +6,8 @@ function Introduction() {
   return (
     <div className="intro intro-grid" id="intro">
       <div className="contact item">
-        <h1>
-          Suchit
-          <h1>
-            Krishna<span className="gold">.</span>
-          </h1>
+        <h1 style={{ whiteSpace: "pre-line" }}>
+          Suchit{"\n"}Krishna<span className="gold">.</span>
         </h1>
         <span className="line"></span>
         <p style={{ whiteSpace: "pre-line" }}>
@@ -32,7 +29,12 @@ function Introduction() {
 
       <div className="image item middle-column">
         <span className="circle"></span>
-        <img src={PersonalImage} className="personal-img"></img>
+        <img
+          src={PersonalImage}
+          className="personal-img"
+          alt="Personal-Image"
+          loading="eager"
+        ></img>
       </div>
       <div className="summary item">
         <h4>INTRODUCTION</h4>
