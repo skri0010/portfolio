@@ -79,7 +79,6 @@ function Skills() {
           enabling me to effectively achieve my goals.
         </p>
       </div>
-
       <SkillCard skills={skills} />
     </div>
   );

@@ -4,41 +4,23 @@ import Introduction from "./components/Body/Introduction";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Footer/Contact";
-import { useEffect, useRef } from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
-// import { SpeedInsights } from "@vercel/speed-insights/react";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 
 function App() {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
-  const controls = useAnimation();
-  useEffect(() => {
-    controls.start(inView ? "visible" : "");
-  }, [inView, controls]);
+  injectSpeedInsights();
   return (
     <>
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate={controls}
-        transition={{ duration: 0.5, delay: 0.25 }}
-      >
-        <Header></Header>
-        <Introduction></Introduction>
+      <Header></Header>
+      <Introduction></Introduction>
 
-        <Skills></Skills>
+      <Skills></Skills>
 
-        {/* <div className='experience'>
+      {/* <div className='experience'>
   
             <div className='name'> List of experiences</div>
           </div> */}
-        <Projects></Projects>
-        <Contact></Contact>
-        {/* <SpeedInsights /> */}
-      </motion.div>
+      <Projects></Projects>
+      <Contact></Contact>
     </>
   );
 }
