@@ -1,3 +1,4 @@
+import CardAnimation from "../CardAnimation";
 import "./Projects.scss";
 
 type ProjectProps = {
@@ -15,34 +16,36 @@ function ProjectCard(props: ProjectProps) {
     <div className="project-grid">
       {props.projects.map((project, index) => {
         return (
-          <div className="project-card item" key={index}>
-            <div className="project-img">
-              <a href={project.link}>
-                <img
-                  src={project.image}
-                  loading="lazy"
-                  alt={project.title}
-                ></img>
-              </a>
-            </div>
-            <div className="text">
-              <h4> {project.title}</h4>
-              <p>{project.desc}</p>
-            </div>
-
-            <div className="icons">
-              {project.icons.map((icon, iconIndex) => {
-                return (
+          <CardAnimation>
+            <div className="project-card item" key={index}>
+              <div className="project-img">
+                <a href={project.link}>
                   <img
-                    src={icon}
+                    src={project.image}
                     loading="lazy"
-                    alt="projectIcon"
-                    key={iconIndex}
+                    alt={project.title}
                   ></img>
-                );
-              })}
+                </a>
+              </div>
+              <div className="text">
+                <h4> {project.title}</h4>
+                <p>{project.desc}</p>
+              </div>
+
+              <div className="icons">
+                {project.icons.map((icon, iconIndex) => {
+                  return (
+                    <img
+                      src={icon}
+                      loading="lazy"
+                      alt="projectIcon"
+                      key={iconIndex}
+                    ></img>
+                  );
+                })}
+              </div>
             </div>
-          </div>
+          </CardAnimation>
         );
       })}
     </div>
