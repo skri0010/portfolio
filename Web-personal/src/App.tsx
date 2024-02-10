@@ -4,10 +4,10 @@ import Introduction from "./components/Body/Introduction";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Footer/Contact";
-import { injectSpeedInsights } from "@vercel/speed-insights";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
-  injectSpeedInsights();
+  // injectSpeedInsights();
   return (
     <>
       <Header></Header>
@@ -21,6 +21,7 @@ function App() {
           </div> */}
       <Projects></Projects>
       <Contact></Contact>
+      <SpeedInsights />
     </>
   );
 }
