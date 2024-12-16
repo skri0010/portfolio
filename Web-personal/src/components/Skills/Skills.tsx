@@ -49,6 +49,11 @@ function Skills() {
       image: MobileDevelopmentImg,
       icons: [reactIcon, javaIcon, appleIcon, androidIcon, pwaIcon],
     },
+    // {
+    //   title: "Mobile App Development",
+    //   image: MobileDevelopmentImg,
+    //   icons: [reactIcon, javaIcon, appleIcon, androidIcon, pwaIcon],
+    // },
     {
       title: "Database Management",
       image: DatabaseImg,

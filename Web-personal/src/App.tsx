@@ -7,18 +7,11 @@ import Contact from "./components/Footer/Contact";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
-  // injectSpeedInsights();
   return (
     <>
       <Header></Header>
       <Introduction></Introduction>
-
       <Skills></Skills>
-
-      {/* <div className='experience'>
-  
-            <div className='name'> List of experiences</div>
-          </div> */}
       <Projects></Projects>
       <Contact></Contact>
       <SpeedInsights />

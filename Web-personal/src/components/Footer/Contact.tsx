@@ -25,7 +25,7 @@ function Contact() {
         <ContactButton>
           <a href="tel:+918484090481">
             <FaPhoneAlt size={22} className="icon" />
-            (+91) 8484090481
+            (+61) 425231784
           </a>
         </ContactButton>
       </div>

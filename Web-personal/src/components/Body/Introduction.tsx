@@ -49,14 +49,13 @@ function Introduction() {
         </CardAnimation>
         <CardAnimation>
           <h2>
-            Software Engineer,<br></br> Full Stack Developer
+            Software Engineer,<br></br> Cyber Security Enthusiast
           </h2>
         </CardAnimation>
         <CardAnimation>
           <p>
-            {" "}
-            Software Engineering graduate passionate about exploring diverse
-            avenues within the field.
+            Seasoned Full Stack Developer, passionate about building and
+            securing software systems.
           </p>
         </CardAnimation>
         <CardAnimation>

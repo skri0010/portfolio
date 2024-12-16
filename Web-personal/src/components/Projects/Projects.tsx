@@ -6,17 +6,14 @@ import mongoDbIcon from "../../public/images/projects/mongodb.svg";
 import vueIcon from "../../public/images/projects/vuejs.svg";
 import nodeJSIcon from "../../public/images/projects/nodejs.svg";
 import awsIcon from "../../public/images/projects/aws.svg";
-import htmlIcon from "../../public/images/projects/html5.svg";
-import cssIcon from "../../public/images/projects/css3.svg";
-import javacriptIcon from "../../public/images/projects/javascript.svg";
 import firebaseIcon from "../../public/images/projects/firebase.svg";
 import javaIcon from "../../public/images/projects/java.svg";
-
+import nextJsIcon from "../../public/images/skills/nextjs.svg";
 import reportCareImg from "../../public/images/projects/test2.png";
 import simpImg from "../../public/images/projects/test.png";
-import timeTrackerImg from "../../public/images/projects/timeTracker.png";
 import covidSystemImg from "../../public/images/projects/covidSystem.png";
 import apiImg from "../../public/images/projects/rest.svg";
+import conferencingImg from "../../public/images/projects/conferencing.png";
 
 function Project() {
   const projects = [
@@ -35,11 +32,11 @@ function Project() {
       icons: [reactIcon, typeScriptIcon, awsIcon],
     },
     {
-      title: "Monash Time Tracker",
-      desc: "A project management website for Monash University teachers to oversee student group assignments and ensure equal contributions",
-      image: timeTrackerImg,
-      link: "https://github.com/skri0010/Monash-Time-Tracker",
-      icons: [htmlIcon, cssIcon, javacriptIcon, firebaseIcon],
+      title: "Conferencing Chat App",
+      desc: "A real-time chat and video call application that allows users to create and join rooms to have one on one conversations",
+      image: conferencingImg,
+      link: "https://conferencing-chat.vercel.app/",
+      icons: [nextJsIcon, firebaseIcon],
     },
     {
       title: "Covid Test Booking System",
